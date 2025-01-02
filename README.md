@@ -1,5 +1,5 @@
 # M7-L3-ORMDefinicionModelo-Parte2
-Educativo y de Aprendizaje Personal
+Nuevo Proyecto Django: Sistema de Gestión de Cursos
 
 ---
 ## Tabla de Contenidos
@@ -123,7 +123,7 @@ Educativo y de Aprendizaje Personal
         class Meta:
             model = Curso
             fields = ['nombre', 'descripcion', 'duracion_horas', 'fecha_inicio', 'fecha_fin']
-            
+
 ## Creación de Vistas
 17. gestion_cursos/views.py 
     ```bash 
