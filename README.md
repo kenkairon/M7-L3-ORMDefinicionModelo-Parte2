@@ -114,9 +114,17 @@ Educativo y de Aprendizaje Personal
     python manage.py makemigrations
     python manage.py migrate
 
+16. gestion/forms.py
+    ```bash 
+    from django import forms
+    from .models import Curso
 
+    class CursoForm(forms.ModelForm):
+        class Meta:
+            model = Curso
+            fields = ['nombre', 'descripcion', 'duracion_horas', 'fecha_inicio', 'fecha_fin']
 
-16. gestion_cursos/views.py 
+17. gestion_cursos/views.py 
     ```bash 
     from django.shortcuts import render, redirect
     from .models import Curso
@@ -142,7 +150,7 @@ Educativo y de Aprendizaje Personal
             form = CursoForm()
         return render(request, 'gestion_cursos/crear_curso.html', {'form': form})
 
-17. creamos en templates/gestion_cursos/lista_cursos.html 
+18. creamos en templates/gestion_cursos/lista_cursos.html 
     ```bash 
     <!DOCTYPE html>
     <html lang="en">
@@ -181,7 +189,7 @@ Educativo y de Aprendizaje Personal
     </body>
 
     </html>
-18. creamos en templates/gestion_cursos/index.html 
+19. creamos en templates/gestion_cursos/index.html 
     ```bash 
     <!DOCTYPE html>
     <html lang="en">
@@ -204,7 +212,7 @@ Educativo y de Aprendizaje Personal
 
     </html>
 
-19. Ingresamos a las rutas http://127.0.0.1:8000/
+20. Ingresamos a las rutas http://127.0.0.1:8000/
 
     ```bash 
     python manage.py runserver
