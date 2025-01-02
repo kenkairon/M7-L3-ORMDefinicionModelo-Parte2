@@ -123,7 +123,8 @@ Educativo y de Aprendizaje Personal
         class Meta:
             model = Curso
             fields = ['nombre', 'descripcion', 'duracion_horas', 'fecha_inicio', 'fecha_fin']
-
+            
+## Creación de Vistas
 17. gestion_cursos/views.py 
     ```bash 
     from django.shortcuts import render, redirect
