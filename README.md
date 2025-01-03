@@ -114,7 +114,7 @@ Nuevo Proyecto Django: Sistema de Gestión de Cursos
     python manage.py makemigrations
     python manage.py migrate
 
-16. gestion/forms.py
+16. gestion_cursos/forms.py
     ```bash 
     from django import forms
     from .models import Curso
