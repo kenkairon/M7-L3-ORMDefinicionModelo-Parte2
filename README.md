@@ -186,7 +186,8 @@ Nuevo Proyecto Django: Sistema de Gestión de Cursos
                 {% endfor %}
             </tbody>
         </table>
-        <a href="{% url 'crear_curso' %}">Registrar Nuevo Curso</a>
+        <a href="{% url 'crear_curso' %}">Registrar Nuevo Curso</a><br><br>
+        <a href="{% url 'index' %}">Volver</a><br><br>
     </body>
 
     </html>
